@@ -1,0 +1,27 @@
+ $CONTRL EXETYP=RUN $END
+ $CONTRL SCFTYP=RHF DFTTYP=B97D RUNTYP=OPTIMIZE
+         D5=.T. INTTYP=HONDO ICUT=11 ITOL=30 $END
+ $SYSTEM TIMLIM=3600 MWORDS=60 $END
+ $SCF    DIRSCF=.T. NCONV=6 $END
+ $BASIS  EXTFIL=.T. GBASIS=TZVP $END
+ $DFTD   VERSN=4 $END
+ $SMP    HTTFIX=.F. CALL64=.T. $END
+ $P2P    P2P=.T. XDLB=.T. $END
+ $STATPT OPTTOL=0.0001 NSTEP=100 $END
+ $DATA 
+Kr in Q3 Geometry optimisation with C3h symmetry
+CNH 3
+
+Kr    6.0     0.00000     0.00000     0.00000
+C     6.0    -2.33292    -0.84286    -0.00000
+C     6.0     1.89640     1.59894     0.00000
+N     7.0    -2.44799    -1.54898    -1.45009
+N     7.0     2.56545     1.34553    -1.45009
+C     6.0     1.33524     2.31270    -1.83920
+O     8.0     1.44925     2.51017    -3.10619
+C     6.0     3.40726     0.00000    -1.47367
+H     1.0     4.08886     0.00000    -0.55988
+H     1.0    -3.48618    -0.87464    -0.00000
+H     1.0     2.50056     2.58180     0.00000
+H     1.0     4.04449     0.00000    -2.41894
+ $END

@@ -1,0 +1,22 @@
+ $CONTRL SCFTYP=RHF RUNTYP=OPTIMIZE COORD=UNIQUE units=ANGS 
+         icharg=0 mult=1 MAXIT=100 $END
+ $SYSTEM TIMLIM=60 MWORDS=40 $END
+ $BASIS GBASIS=STO NGAUSS=3 $END
+ $SCF DIRSCF=.T. NCONV=6 $END
+ $STATPT OPTTOL=0.0001 NSTEP=30 $END
+ $DATA 
+Q3 STO3G Geometry optimisation with C3h symmetry 
+CNH 3
+
+C     6.0     0.10895     2.09269     0.00000
+N     7.0    -0.26482     2.13947     1.38593
+C     6.0     0.82714     1.38360     2.23972
+O     8.0     0.79591     1.20571     3.44491
+C     6.0     1.47053     1.48442     0.00000
+N     7.0     1.76410     1.05284     1.40451
+C     6.0     2.74342     0.20627     1.54308
+H     1.0     3.23557     0.25191     2.57036
+H     1.0     3.52447     0.30330     0.71837
+H     1.0     1.94700     2.31662     0.00000
+H     1.0     0.40399     3.25154     0.00000
+ $END
