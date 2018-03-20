@@ -1,0 +1,28 @@
+ $CONTRL EXETYP=RUN $END
+ $CONTRL SCFTYP=RHF DFTTYP=B97D RUNTYP=OPTIMIZE ICHARG=0
+         D5=.T. INTTYP=HONDO ICUT=11 ITOL=30 $END
+ $SYSTEM TIMLIM=3600 MWORDS=60 $END
+ $SCF    DIRSCF=.T. NCONV=6 $END
+ $BASIS  EXTFIL=.T. GBASIS=TZVP $END
+ $DFTD   VERSN=4 $END
+ $SMP    HTTFIX=.F. CALL64=.T. $END
+ $P2P    P2P=.T. XDLB=.T. $END
+ $STATPT OPTTOL=0.0001 NSTEP=100 $END
+ $DATA 
+(HO)6Q3 DFT-D4/def2TZVP & spherical basis functions. C3h geom opt
+CNH 3
+
+C     6.0    -2.69196    -0.79669     0.00000
+C     6.0     2.03702     1.93429     0.00000
+N     7.0    -2.05621    -1.13124    -1.25484
+N     7.0     2.01109     1.21758    -1.25606
+C     6.0     0.94754     1.64030    -2.06627
+O     8.0     0.83833     1.45131    -3.25276
+C     6.0     2.72510     0.00003    -1.60859
+H     1.0     3.71550    -0.00091    -1.14798
+O     8.0    -4.10485    -1.34911     0.00000
+O     8.0     3.20489     2.87741     0.00000
+H     1.0     2.82904    -0.00053    -2.69637
+H     1.0     4.13648     3.46894     0.00000
+H     1.0    -5.13344    -0.64466     0.00000
+ $END
